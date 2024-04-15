@@ -75,14 +75,12 @@
       // the canvas DOM size and WebGL render target sizes yourself.
       // config.matchWebGLToCanvasSize = false;
 
-     var screenWidth = window.innerWidth;
+    
 
 if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-    // Perangkat mobile: atur ukuran kanvas sesuai dengan lebar layar
-    canvas.style.width = screenWidth + "px";
-    canvas.style.height = "auto"; // Atur tinggi ke otomatis untuk menjaga rasio aspek
-}
-  else {
+  canvas.style.width = "960px";
+  canvas.style.height = "600px";
+} else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
